@@ -31,10 +31,13 @@ public enum Platform {
 	NA("NA1", "na"),
 	OCE("OC1", "oce"),
 	RU("RU", "ru"),
-	TR("TR1", "tr");
+	TR("TR1", "tr"),
+	AMERICAS("AMERICAS", "americas"),
+	ASIA("ASIA", "asia"),
+	EUROPE("EUROPE", "europe");
 
-	private String id;
-	private String name;
+	private final String id;
+	private final String name;
 
 	public static Platform getPlatformById(String id) {
 		for (Platform platform : Platform.values()) {
